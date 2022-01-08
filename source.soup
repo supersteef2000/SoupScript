@@ -1,0 +1,33 @@
+p!!«Enter a number: »;.
+%%number,.
+root,b01.
+loop,,b01.
+i,b00.
+&loop,,=01!!.
+....i,bi,+01.
+....root,bnumber,/root,+root,.
+....root,broot,/02.
+....?i,=number,+01!!.
+........loop,,b00.
+....;.
+;.
+?number,<02!!.
+....p!!number,;.
+....p!!« is not prime.\n»;.
+....notprime,b01.
+;.
+i,b02.
+&i,!>root,!!.
+....mod,bnumber,%i,.
+....?mod,=00!!.
+........p!!number,;.
+........p!!« is not prime.\n»;.
+........notprime,b01.
+........i,broot,+01.
+....;.
+....i,bi,+01.
+;.
+?notprime,!01!!.
+....p!!number,;.
+....p!!« is prime.\n»;.
+;.
